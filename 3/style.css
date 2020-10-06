@@ -1,0 +1,62 @@
+body {
+    font-family: Times Nw Roman;
+    padding: 10px;
+    background: #faebd7;
+  }
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(189, 183, 107);
+  }
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #000000;
+}
+
+.footer {
+    padding: 10px;
+    text-align: center;
+    background:   rgb(189, 183, 107);
+    margin-top: 20px;
+    color:  black;
+  }
+
+.round-box {
+    border: 15px solid  rgb(189, 183, 107);
+    padding: 50px;
+    margin: 20px;
+    background-color:  rgb(25, 149, 250);;
+    animation-name: warna;
+  animation-duration: 30s;
+  }
+
+@keyframes warna {
+    0% {background-color: rgb(255, 0, 0);}
+    10% {background-color: rgb(50, 205, 50);}
+    20% {background-color: rgb(30, 144, 255);}
+    30% {background-color: rgb(255, 0, 0);}
+    40% {background-color: rgb(50, 205, 50);}
+    50% {background-color: rgb(30, 144, 255);}
+    60% {background-color: rgb(255, 0, 0);}
+    70% {background-color: rgb(50, 205, 50);}
+    80% {background-color: rgb(30, 144, 255);}
+    90% {background-color: rgb(255, 0, 0);}
+    100% {background-color: rgb(50, 205, 50);}
+  }
+
+.shadow{
+    text-shadow: 2px 2px 5px rgb(105, 105, 105);
+}
