@@ -1,0 +1,146 @@
+body {
+    padding: 10px;
+    background: #ffff00;
+  }
+
+ul {
+  font-family: 'Lemonada', cursive;
+    list-style-type: none;
+    overflow: hidden;
+  }
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #000000;
+}
+
+.footer {
+    padding: 10px;
+    text-align: center;
+    background: rgb(189, 183, 107);
+    margin-top: 20px;
+    color: black;
+  }
+
+.round-box {
+    border: 15px solid rgb(189, 183, 107);
+    padding: 50px;
+    margin: 20px;
+    background-color: rgb(25, 149, 250);;
+    animation-name: warna;
+  animation-duration: 30s;
+  }
+
+}
+
+@keyframes warna {
+    0% {background-color: rgb(255, 0, 0);}
+    10% {background-color: rgb(50, 205, 50);}
+    20% {background-color: rgb(30, 144, 255);}
+    30% {background-color: rgb(255, 0, 0);}
+    40% {background-color: rgb(50, 205, 50);}
+    50% {background-color: rgb(30, 144, 255);}
+    60% {background-color: rgb(255, 0, 0);}
+    70% {background-color: rgb(50, 205, 50);}
+    80% {background-color: rgb(30, 144, 255);}
+    90% {background-color: rgb(255, 0, 0);}
+    100% {background-color: rgb(50, 205, 50);}
+  }
+
+.shadow{
+    text-shadow: 2px 2px 5px rgb(105, 105, 105);
+}
+
+.container {
+    width: 1200px;
+    border: 12px solid rgb(0, 255, 254);
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+
+.container a {
+  width: 150px;
+  height: 70px;
+  background-color:DodgerBlue;
+  margin: 5px;
+}
+
+.logo img{
+  width: 40px;
+  height: 40px;
+}
+
+.slide{
+    width:650px;
+  height:305px;
+  margin:10px;
+    padding:10px;
+    background-color: white ;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 19px;
+  text-align: center;
+}
+
+.flex-item-left {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 25%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+
+.flex-item-right {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 25%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+
+@media (max-width: 650px) {
+  body {
+    background-color: rgb(199, 21, 133);
+  }
+}
+
+@media (max-width: 600px){
+  .shadow {
+    background-color: rgb(250, 69, 1);
+  }
+}
+
+@media (max-width: 550px) {
+  .lion {
+    background-color: rgb(255, 255, 0);
+  }
+}
+
+.kotak_info:before,.kotak_info:before{padding-right:.5em;position:absolute;font-weight:400}
+.kotak_info{font-family:'Open Sans',sans-serif}
+.kotak_info{line-height:1.5em;position:relative}
+.kotak_infobox{margin:20px 0;padding:4px 0;background:#FFFF00;display:block}
+.kotak_info{margin:0 4px;padding:10px 10px 10px 60px;color:#black;border:2px dashed #efefef}
+.kotak_info:before,.kotak_info:before{font-size:40px;font-family:FontAwesome;margin-top:-13px}
+.kotak_info:before{color:#000;top:50%;left:10px}
+.kotak_info a {color:#000;font-weight:600;position:relative;padding-right:20px;display:inline-block}
+.kotak_info a:before{content:"f08e";font-family:FontAwesome;font-style:normal;font-weight:400;text-decoration:inherit;color:#000;position:absolute;bottom:0;right:0}
