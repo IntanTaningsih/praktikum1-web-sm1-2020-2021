@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<mete charset="UTF-8">
+	<mete name="viewprt" content="width=device-width, initial-scale=1.0">
+	<title>Javascript Function</title>
+</head>
+<body>
+	<h1>Javascript Function</h1>
+	<script>
+		
+		//Deklarasi Function
+		function getLuas(panjang, lebar){
+			var luas = panjang * lebar;
+			return luas;
+		}
+		console.log(getLuas(4,5));
+
+		//Deklarasi Function Sebagai Exspression
+		var getLuas = function(panjang, lebar) {return panjang * lebar};
+		console.log(getLuas(8, 10));
+
+		//Hoisting Pada Punction
+		console.log(getLuas(5, 20));
+		var getLuas = function (panjang, lebar) {return panjang * lebar};
+
+		//Memasukan Nilai Baliakan Function Ke Dalam VAriable
+		var getLuas = function (panjang, lebar) {return panjang * lebar};
+		var luas = getLuas(7, 8);
+		console.log(luas);
+
+		//Function Sebagai Parameter Function Lainnya
+		var getLuas = function(panjang, lebar) {return panjang * lebar};
+		function printGetLuas(f) {
+			luas = f(4,5);
+			console.log(luas);
+		}
+		printGetLuas(getLuas);
+
+		//Arrow Function
+		const getLuass = (panjang, lebar) => panjang * lebar;
+		console.log(getLuass(11, 19))
+
+		//Argumen Fungsi
+		printPeserta("Zidan", "Fisha", "nana", "Sasa");
+		function printPeserta() {
+			console.log(arguments);
+		}
+
+		//Nama
+		function getNama(Depan, Belakang){
+			return Depan + " " + Belakang
+		}
+		console.log(getNama('Intan', 'Taningsih'));
+
+		//Cerita Kemarin
+		function ceritaKemarin(hari, nama, aksi, tempat) {
+			return "Hari " + hari + " seorang wanita yang cantik bernama " + nama + " sedang " + aksi + " di " + tempat 
+		}
+		console.log(ceritaKemarin('Sabtu', 'Intan', 'main', 'rumah teman'));
+
+		console.log("OKE MANTAP")
+	</script>
+</body>
+</html>
